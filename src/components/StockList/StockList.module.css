@@ -1,0 +1,17 @@
+.app-title {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.table {
+    margin: 0 auto;
+}
+
+th {
+    font-size: calc(1rem + 2px);
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+}
