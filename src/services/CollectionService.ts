@@ -3,10 +3,10 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react'
 
 
 export const dividendsAPI = createApi({
-    reducerPath: 'collectionAPI',
+    reducerPath: 'dividendsAPI',
     baseQuery: fetchBaseQuery({ baseUrl: 'https://cloud.iexapis.com' }),
     endpoints: (build) => ({
-        fetchAllCollections: build.query<IDividend[], number>({
+        getDividends: build.query<IDividend[], number>({
             query: (range) => ({
                 url: `/stable/time-series/advanced_dividends`,
                 params: {
@@ -27,3 +27,5 @@ export const dividendsAPI = createApi({
         })
     })
 })
+
+export const { useGetDividendsQuery } = dividendsAPI

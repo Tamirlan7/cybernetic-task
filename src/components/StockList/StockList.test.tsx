@@ -2,7 +2,6 @@ import React from 'react'
 import { screen, render } from '@testing-library/react'
 import { TBody } from './StockList'
 import { DragDropContext } from 'react-beautiful-dnd'
-import { IDividend } from '@my-types/types'
 
 
 const dividends = [
